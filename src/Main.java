@@ -1,13 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        double exchangeRate = 90.15;
-        double amountToExchange = 1000.00;
-        if(exchangeRate > 70.00){
-            if(exchangeRate * amountToExchange > 10000){
-                System.out.println("much");
-            } else {
-                System.out.println("little");
+        int x = 1;
+        int y = 1;
+        while (x < 10) {
+            while (y < 10) {
+                System.out.println(x + " x " + y + " = " + (x * y));
+                y++;
             }
+            x++;
+            y = 1;
         }
     }
 }
